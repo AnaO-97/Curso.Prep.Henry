@@ -1,0 +1,29 @@
+* Variables:
+Las variables pueden ser vistas como un "cajón" o "sitio", al que se le pone un nombre, y allí
+es donde se almacenan valores (enteros, booleanos, strings) que después pueden ser usados
+por medio del nombre que se a decidido darle al "cajón".
+
+
+* Strings:
+Los strings son un tipo de variables que básicamente almacenan texto (letras, caracteres especiales, 
+números), de manera que, si se tiene un número guardado en un variable de este tipo, este deja de ser 
+un dato numérico para ser texto.
+
+
+* Funciones (argumentos, `return`):
+Las funciones son un trozo de programa que se encarga de ejecutar algo en específico y son muy utilizadas
+por un programador cuando el programa en general debe realizar repetidamente unas operaciones, así que
+para que el programa no quede muy extenso se realiza una función que luego puede ser invocada en el código
+principal. Las funciones pueden poseer argumentos, que vendrian a ser variables que la misms necesita recibir
+cuando es invocada para poder realizar sus operacines, así, una función puede devolver (return) un 
+resultado o no.
+
+
+* Declaraciones `if`:
+Las declaraciones IF o SI, se trata de un tipo de secuencia que a partir de una expresión que devuelva 
+verdadero o falso se hace efectiva o no, según corresponda.
+
+
+* Valores booleanos (`true`, `false`)
+Los valores booleanos true y false son variables y a la vez palabras claves para varios lenguajes de 
+programación, su principal implementación es en las secuencias para que estas se ejecuten o no.
