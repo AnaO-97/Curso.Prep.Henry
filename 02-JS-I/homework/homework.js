@@ -219,7 +219,7 @@ function esVocal(letra){
   var Evalua      = letra.match(ExpRegVocal);
 
   if (((letra.length != 0) && (letra.length > 1)) || (Evalua == null))
-    return 'Dato incorrecto';
+    return ('Dato incorrecto');
   
   if(Evalua != null)
     return ('Es vocal') ;
