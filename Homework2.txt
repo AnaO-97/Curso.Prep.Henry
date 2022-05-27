@@ -1,0 +1,44 @@
+* for:
+'for' es una sentencia en Java Script que se implementa es situaciones específicas en que el usuario necesita
+que un bloque de código se repita "n" cantidad de veces, esta sentencia se inicializa con tres expresiones,
+con la primera se genera una variable, la segunda es de comparación, con esta se le indica a la
+sentencia si debe ejecutarse o no (resultado booleano) y finalmente la tercera va cambiando el valor de la 
+variable inicializada, podría decirse que un for se lee: "La variable i comienza en 0, como i no es mayor a 10 
+(o sea i > 10 es false) realice el código aquí contenido, al finalizar la ejecución de este súmele 1 a i y 
+se vuelve a preguntar si i, valiendo 1 para este caso, es mayor a 10, como no lo es vuelve a ejecutar el código
+para finalmente aumentar 1 a i que vale 1, entonces sigue preguntando, i valiendo 2 es mayor que
+10 .... y así sucesivamente hasta que i es igual a 11 y como ya es mayor a 10 entonces no necesita
+ejecutar el código y el intérprete se sale de la sentencia for".
+
+			
+			for (let i = 0; i > 10; i++) {}
+
+*OPERADORES LÓGICOS && - || -!
+Así como se tienen operadores para sumar, multiplicar, dividir y restar los datos numéricos, en JavaScript 
+se manejan unos caracteres especiales para realizar operaicones con los datos booleanos true y false, estos
+se leen:
+				* y 		     "&& -> AND" 
+				* o 		     "|| -> OR"  
+				* negado o no lógico "!  -> NOT"
+
+los primeros dos requieren de dos operadores para generar un resultado, el tercero lo que hace es invertir
+o cambiar el valor recibido, cada uno funciona de la siguiente manera:
+
+			* 	true		(&&)		true		=	true
+			  Si esto se cumple	 Y	Esto tambien se cumple	= TODO SE CUMPLE
+
+			* 	false 		(&&)		true		=	false
+			  Si no se cumple	 Y	Esto si se cumple	= MEJOR NADA SE CUMPLE
+
+
+			* 	true		(||)		false 		=	true
+			  Si esto se cumple	 o	    Esto se cumple	= TODO SE CUMPLE
+
+
+			* 	false 		(||)	         true		=	true
+			  Si esto se cumple	 o	     Esto se cumple	= TODO SE CUMPLE
+
+			
+			*    !true = false		    !false = true
+			  Negado de true genera el false    Negado de false genera true
+			  lo opuesto de true es false	    Lo opuesto de false es true
