@@ -1,0 +1,20 @@
+* Array:
+Los arrays en JavaScript son una colección de datos, los cuales pueden estar delimitados
+por un tipo (en el array solo se puedan guardar datos del mismo tipo), o no, de manera
+que el array se guarden datos de cualquier tipo (números, strings, bools, funciones, etc).
+
+En pocas palabras, un array o arreglo de datos puede considerarse como una variable que 
+puede almacenar no solo un dato sino varios, esto en un orden específico, así;
+
+	Consideremos que tenemos el array llamado Armario, Armario esta compuesto por unos cajones
+	en los cuales puedo poner lo que necesite (números, strings, funciones, valores booleanos,
+	entre otras cosas). Cada "cajón" de Armario se puede diferenciar de los demás por un número
+	que tiene asignado por defecto, por tanto, para acceder a lo que guarde en "x" cajón
+	primero menciono que está en el Armario y después menciono el número específico del cajón. Ejemplo:
+	
+		var Armario = ['Calcetines', 	  8 , 		 true , 	 1245]
+				 "cajon 0" 	"cajon 1" 	"cajon 2" 	"cajon 3"
+
+	Para acceder al dato true de Armario la sintaxis es:
+		
+			Armario[2] -->  true;
