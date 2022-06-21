@@ -1,0 +1,43 @@
+* Objetos:
+Teniendo claridad de cómo funciona y se comporta un arreglo de datos o array, se podría decir
+que los objetos son parecidos en ciertos aspectos al array (aclarando que un array es una simplificación
+de los objetos); de esta manera, en un objeto también se puede tener datos de diferente tipo, incluso funciones 
+y keywords, dependiendo de la necesidad y de la finalidad del objeto mismo. En cuanto a sintaxis, mientas que
+los arrays contienen sus datos entre corchetes "[]", en un objeto los datos están contenidos entre llaves
+"{}", por otro lado, en ambos los datos se separan unos de otros con coma y al terminar la declaración
+del mismo se finaliza la línea de código con un ";". En este orden de ideas, los datos guardados en el objeto son 
+conocidos como par KEY:VALUE, de manera que, para acceder a cada elemento, mientras que en arrays era por 
+medio de índices, en el objeto se hace por medio de la KEY o PROPIEDAD que le corresponde al VALUE 
+al que se desea acceder. Finalmente, los objetos son muy útiles en diversas situaciones, cómo por ejemplo
+tener un conjunto de elementos a los que se desea caracterizar por medio de aspectos o características
+que todos tienen y que al mismo tiempo los hace diferentes unos de otros.
+
+* Propiedades:
+Como se mencionó anteriormente, la manera de acceder al elemento de un objeto es por medio de la propiedad
+o KEY, así, todos los elementos dentro de un objeto deben tener una KEY diferente a las demás para no 
+propiciar errores en el intérprete.
+
+* Métodos:
+Son básicamente funciones que por el simple hecho de estar dentro de un objeto son llamadas métodos. Para 
+acceder a los métodos se usa la notación de punto o con corchetes y en ambas poniendo paréntesis al final
+para aclarar que se desea acceder a una función del objeto en cuestión.
+
+* Bucle `for…in`:
+Se ha dicho que los objetos son similares a los arrays, así, otro aspecto que comparten es que se puede
+iterar entre los elementos, aunque para hacerlo dentro de un objeto es necesario implementar otro tipo de 
+loop, el conocido como "for in", este proporciona una variable que va a ir tomando una a una la posición de 
+cada KEY con el fin de acceder al VALUE de cada elemento.
+
+* Notación de puntos vs notación de corchetes:
+Partiendo de que los objetos contienen información, datos e incluso funciones (métodos), para acceder a
+ellos se puede implementar dos formas de sintaxis, usar una u otra depende de la información que se tenga
+para acceder al elemento, así, para utilizar la notación de punto se debe tener claridad de la KEY o 
+propiedad, ya que para el intérprete lo que va después del punto es exactamente la KEY que debe buscar para 
+retornar el VALUE en cuestión.
+
+Es adecuado implementar la notación de corchetes cuando el nombre de la propiedad o KEY se encuentra
+almacenada en una variable por necesidades específicas del código, por ejemplo, cuando se está iterando
+en el objeto por medio de un "for in". Debe tenerse en cuenta para esta notación, en caso de que la
+cadena que apunta al valor al que se desea acceder, la cual está dentro de los corchetes "[]", se encuentre
+entre comillas, es porque el valor allí puesto es literalmente la key que se está buscando dentro del 
+objeto, mientras que, cuando se trate de una variable, esta no estará entre comillas.
