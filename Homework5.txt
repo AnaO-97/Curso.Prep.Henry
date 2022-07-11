@@ -1,0 +1,45 @@
+* Constructors (de Clases):
+El lenguaje de JavaScript está basado en prototipos, algo muy similar a los lenguajes de programación
+orientado a objetos. Teniendo claro como son, funcionan y pueden ser usados los objetos, se puede decir
+que los constructores u objetos de clase hacen referencia a "plantillas" para crear sin número de objetos
+que comparten un mismo tipo de propiedades y métodos, los nuevos objetos creados a partir de una clase
+son conocidos como INSTANCIAS, por tanto, instanciar es crear un objeto a partir de un constructor.
+De esta manera, los constructores o clases se comportan como PROTOTIPOS de donde se van a obtener varios 
+objetos del mismo estilo o clase.
+
+La manera más común de declarar un objeto de clase, constructor o prototipo es por medio de una función
+constructora, poniendo el nombre de dicha función con mayúscula inicial para que otros programadores
+entiendan que se trata de una clase, y al igual que cualquier función, puede recibir cualquier tipo
+de datos (objetos, strings, números, bools, funciones), así:
+
+		function NombredelaClase () {}
+
+Como la idea es que este objeto de clase sea una "plantilla" para la creación de otros objetos, en la 
+declaración de sus propiedades se implementa la KeyWord "this", con el fin de que esta tome el valor
+enviado por la nueva instancia, y a diferencia de la declaración tradicional de propiedades en un objeto
+(donde se usan los dos puntos ":" para la asignación del "VALUE" ), al declarar una propiedad en un 
+constructor se implementa el igual "=" para asignar valor a la propiedad, así:
+
+		function NombredelaClase (Primero,Segundo,Tercero) {
+			this.PrimerPropiedad  = Primero,
+			this.SegundaPropiedad = Segundo,
+			this.TerceraPropiedad = Tercero,		
+		}	
+
+* Prototype:
+La creación de métodos es un trabajo dispendioso para la máquina, esto en cuanto a memoria, de manera que 
+sí para una instancia la creación de métodos se diera de igual manera que la creación de las propiedades, un 
+programa muy simple podría tornarse pesado, por ende, ineficiente.
+En este orden de ideas, para evitar un gasto de memoria innecesario, los constructores u objetos de clase
+cuentan con una propiedad conocida como Prototype, en esta se "archivan" los métodos a los que puede acceder
+cualquier instancia de esta clase. 
+Con prototype, cuando se le pida al interprete que cree varios objetos de una clase, este solo replicará
+las propiedades y asignará los valores que le corresponda a cada instancia, pero no va a replicar los métodos,
+lo que hará es permitir que cada instancia de esta clase acceda sin problema a cualquiera de los métodos
+puestos en prototype.
+
+Para crear los metodos de un constructor, partiendo de que estos deben estar en prototype, se implementa
+comúnmente la siguiente instrucción;
+
+		NombreDelaClase.prototype.NombreDelMetodo = function () {
+			return ("Hola " + this.SegundaPropiedad);};
