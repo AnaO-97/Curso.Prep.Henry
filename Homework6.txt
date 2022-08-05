@@ -1,0 +1,11 @@
+* Funciones Callbacks:
+Estas son funciones que se pasan como argumento a otra función, de manera tal que puede ser pasada dentro
+de una variable, o de manera anónima escribiendola dentro de los parentesis de la función que la utiliza.
+Así, el propósito de una collback es que poder programar de manera asíncrona y no secuencial que es lo
+habitual. 
+
+En este orden de ideas, lo que está dentro de la función callback va a ocurrir primero que lo que 
+ocurre dentro de la función principal, así por ejemplo, los métodos bucle de la clase array, como 
+.forEach, .reduce y .map que usan callbacks que el desarrollador programa a su convenciencia, tienen como 
+función principal pasar por cada elemento del array, pero antes de avanzar de un elemento
+a otro realiza una tarea de pormedio que esta definida libremente dentro del callback.
