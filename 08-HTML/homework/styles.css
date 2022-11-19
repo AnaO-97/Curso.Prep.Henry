@@ -1,19 +1,48 @@
-h1 
-{
-   color: lightcoral;
+body {
+    background-image: url(https://us.123rf.com/450wm/ninchikvector/ninchikvector2010/ninchikvector201000011/157636764-camarones-en-brocheta-camarones-sin-c%C3%A1scara-carne-de-camar%C3%B3n-dibujo-de-camarones-hervidos-sobre-un-f.jpg?ver=6);    
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
 }
-img
-{
-    width: 400px;
+
+h1 {    
+    -webkit-text-fill-color: cadetblue;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
-#thirdDiv
-{
-    height: 600px;
-    width:  500px;
-    padding: 50px;
-    border: 3px dotted black ;
+
+img {
+    width:  400px;
+    border: 3px dotted black;;
+}
+
+#thirdDiv {
+    height:  600px;
+    width:   500px;
+    padding: 30px;
+    margin:  30px;
+    border:  3px dotted black;
     background-color: cadetblue;
 }
-#spanId{
-    margin: 50px;
+
+.divClass{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+#OwnLogo {
+    border: 3px dotted black;
+    height: 60px;
+    width:  60px;
+    background-color: coral;
+
+    color:     green;
+    font-style:  oblique;
+    display:     flex;    
+    align-items: center; 
+
+    position: fixed;
+    right:    20px;
+    bottom:   5px;
 }
